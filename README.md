@@ -15,3 +15,6 @@ load("Zeit_comment3.Rdata")
 zeit_comment <- rbind(zeit_comment1, zeit_comment2)
 zeit_comment <- rbind(zeit_comment, zeit_comment3)
 ```
+
+
+## Topic Modeling
