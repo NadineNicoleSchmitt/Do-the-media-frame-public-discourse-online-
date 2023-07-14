@@ -1,2 +1,0 @@
-Please note that Zeit_comment and Welt_comment are split into three files separately because otherwise, the file is too large. 
-You have to load them into R and bind them with rbind()
