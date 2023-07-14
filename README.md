@@ -18,3 +18,5 @@ zeit_comment <- rbind(zeit_comment, zeit_comment3)
 
 
 ## Topic Modeling
+![Search_k.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModeling/Search_k.JPG)
+![Search_k_detail.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModeling/Search_k_detail.JPG)
