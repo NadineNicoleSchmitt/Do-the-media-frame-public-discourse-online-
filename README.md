@@ -46,7 +46,7 @@ I used the searchK function to find the best value for K and chose K=17
 ![Search_k.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/Search_k.JPG)
 ![Search_k_detail.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/Search_k_detail.JPG)
 
-The model for K=17 can be found [here](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/topicModel.Rdata) and this [file](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/Topics.pdf) represents the topics. I used this model to label each article in our corpus with a topic and used [this](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/topicsArticle.Rdata) in the preparePredictors.r script.
+The model for K=17 can be found [here](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/topicModel.Rdata) and this [file](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/Topics.pdf) represents the topics. I used this model to label each article in our corpus with a topic and used [this](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/topicsArticle.Rdata) in the [CreatePredictors.R script](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Predictors/CreatePredictors.R).
 
 ## Dictionary Expansion with Self-trained Word Embeddings
 Please run these script: [estimateEmbeddings.R](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/DictinaryExpansion/estimateEmbeddings.R) and [prepareDictionary.R](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/DictinaryExpansion/prepareDictionary.R)
@@ -133,3 +133,20 @@ denominator <-rowSums(colors_dfm)
 score <- numerator/denominator  
 colors_df$score <- score
 ```
+
+## Prepare Predictors
+Please run this script: [CreatePredictors.R](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Predictors/CreatePredictors.R)
+
+Predictors/ independent variables: date, lengthTitle, lengthArticle, typetokenratio article,  genderOfAuthor, ReadabilityArticle, topicArticle,
+SentimentsTitle, SentimentsArticle 
+Output/ dependent variables: numberComments, sentimentComments
+
+The [articlesRich1](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Predictors/articlesRich1.Rdata) and [articlesRich2](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Predictors/articlesRich2.Rdata) files contain all predictors and outputs - I stored them again seperately and to use them run following code:
+
+```markdown
+#articles
+load("articlesRich1.Rdata")
+load("articlesRich22.Rdata")
+articlesRich <- rbind(articles1, articlest2)
+```
+## Analysis
