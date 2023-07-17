@@ -39,5 +39,11 @@ Please run this script: [descriptiveAnalysis.R](https://github.com/NadineNicoleS
 
 
 ## Topic Modeling
-![Search_k.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModeling/Search_k.JPG)
-![Search_k_detail.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModeling/Search_k_detail.JPG)
+Please run this script: [getTopicsOfArticles.R](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/getTopicsOfArticles.R)
+
+
+I used the searchK function to find the best value for K and chose K=17
+![Search_k.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/Search_k.JPG)
+![Search_k_detail.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/Search_k_detail.JPG)
+
+The model for K=17 can be found [here](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/topicModel.Rdata) and this [file](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/Topics.pdf) represents the topics. I used this model to label each article in our corpus with a topic and used [this](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModelling/topicsArticle.Rdata) in the preparePredictors.r script.
