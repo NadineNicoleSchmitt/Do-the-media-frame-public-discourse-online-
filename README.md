@@ -150,3 +150,5 @@ load("articlesRich22.Rdata")
 articlesRich <- rbind(articles1, articlest2)
 ```
 ## Analysis
+
+Please run this script: [PredictComments.R](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/PredictComments.R)
