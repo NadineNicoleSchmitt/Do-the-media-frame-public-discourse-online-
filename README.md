@@ -26,11 +26,17 @@ comments <- rbind(comments, comments4)
 comments <- rbind(comments, comments5)
 ```
 ### Descriptive Analysis - Number of Comments
+Please run this script: []()
+
 <img src="https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Data/DescriptiveAnalysis/NumberCommentsHB.JPG" width="750">
 
 <img src="https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Data/DescriptiveAnalysis/NumberCommentsZeit.JPG" width="750">
 
 <img src="https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Data/DescriptiveAnalysis/NumberCommentsWelt.JPG" width="750">
+
+<img src="https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/Data/DescriptiveAnalysis/#ArticlesWithOrWithoutComments.JPG" width="750">
+
+
 
 ## Topic Modeling
 ![Search_k.JPG](https://github.com/NadineNicoleSchmitt/Does-the-media-frame-public-discourse-online/blob/main/TopicModeling/Search_k.JPG)
